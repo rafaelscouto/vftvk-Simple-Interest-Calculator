@@ -30,6 +30,7 @@ function compute()
         `;
         document.getElementById("result").removeAttribute("class");
     } else {
+        alert("Please enter a positive number.");
         document.getElementById("result").classList.add("error");
         document.getElementById("result").innerHTML = `Error: Amount field may have received invalid data.`;
     }
