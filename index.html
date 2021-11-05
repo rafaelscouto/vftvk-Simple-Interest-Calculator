@@ -4,13 +4,34 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <section id="hero">
+            <h1 class="title">Simple Interest Calculator</h1>
+            <form id="form_calc">
+                <fieldset form="form_calc" name="form_calc">
+                    <div class="input-control">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" min="0">
+                    </div>
+                    <div class="input-control">
+                        <label for="rate">Interest Rate</label>
+                        <div>
+                            <input type="range" id="rate" name="rate" min="1" max="10" step="0.5" onclick="rangeValue(this.value)">
+                            <label id="rangeValue">5.5%</label>
+                        </div>
+                    </div>
+                    <div class="input-control">
+                        <label for="years">No. of Years</label>
+                        <select id="years" name="years" aria-label="default select">
+                            
+                          </select>
+                    </div>
+                    <input type="button" onclick="compute()" value="Compute Interest" >
+                    <div id="result"></div>
+                </fieldset>
+            </form>
+            <footer class="footer">
+               <p>&copy; Everyone Can Get Rich</p>
+            </footer>
+        </section>
     </body>
 </html>

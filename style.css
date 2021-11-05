@@ -1,4 +1,42 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:#000;}
 
+#hero{
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 30px;
+    width: 400px;
+    background-color: #fff;
+}
 
+.title{
+    color: #939393;
+    margin:0 0 30px;
+    font-weight: bold;
+}
+
+#form_calc fieldset{
+    border: none;
+    padding:0 30px
+}
+
+.input-control{
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 15px;
+}
+
+#result{
+    margin: 15px 0 0;
+}
+
+.emphasis{
+    background-color: #f0d53b;
+}
+
+.error{
+    color: #f03b3b;
+}
+
+.footer p{
+    margin: 0;
+}
